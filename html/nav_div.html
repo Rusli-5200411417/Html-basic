@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Navigation & Div</title>
+        <style>
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #7d7a7a;
+                padding: 10px 20px;
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu a{
+                color: aliceblue;
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 18px;
+            }
+            .menu a:hover{
+                color: yellow;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            .vertical{
+                text-align: center;
+                padding: 15px;
+            }
+           .div1{
+                background-color: aqua;
+           }
+           .div2{
+            background-color: blue;
+           }
+           .horizontal{
+               display: flex;
+               margin-top: 10px;
+               gap: 10px;
+           }
+           .box{
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid #000;
+            }
+        </style>        
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="../img/idext1.png" alt="Logo">
+                <span>My Website</span>
+            </div>
+
+            <div class="menu">
+                <a href="form.html">Form</a>
+                <a href="css.html">CSS</a>
+                <a href="profile.html">Profile</a>
+            </div>
+        </nav>
+        
+        <div class="vertical div1">
+            <h2>DIV 1</h2>
+            <p>contoh content div 1</p>
+        </div>
+
+        <div class="vertical div2">
+            <h2>DIV 2</h2>
+            <p>contoh content div 2</p>
+        </div>
+
+        <div class="horizontal">
+            <div class="box">BOX 1</div>
+            <div class="box">BOX 2</div>
+            <div class="box">BOX 3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div dan Navigation</title>
+    <style>
+        /* Style untuk navigasi */
+        nav {
+        display: flex;                 /* aktifkan flexbox */
+        justify-content: space-between;/* pisahkan kiri & kanan */
+        align-items: center;           /* sejajarkan tengah secara vertikal */
+        background-color: #333;
+        padding: 10px 20px;
+        }
+
+        /* Bagian kiri (logo + teks) */
+        .logo {
+        display: flex;
+        align-items: center; /* sejajarkan gambar & teks */
+        gap: 10px;           /* jarak antara gambar & teks */
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        .logo img {
+        width: 40px;
+        height: 40px;
+        }
+
+        /* Bagian kanan (menu link) */
+        .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+        }
+
+        .menu a:hover {
+        color: yellow;
+        }
+
+        /* Style div vertikal */
+        .vertikal {
+            padding: 20px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .div1 { background-color: teal; }
+        .div2 { background-color: darkorange; }
+        .div3 { background-color: seagreen; }
+
+        /* Style div horizontal */
+        .horizontal-container {
+            display: flex;
+            flex-direction: row;
+            
+            margin-top: 20px;
+        }
+
+        .horizontal {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid #000;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <!-- Kiri: logo + teks -->
+    <div class="logo">
+      <img src="/img/idext1.png" alt="Logo">
+      <span>My Website</span>
+    </div>
+
+    <!-- Kanan: menu link -->
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    </nav>
+
+    <!-- Div Vertikal -->
+    <div class="vertikal div1">
+        <h2>Div 1</h2>
+        <p>Ini contoh div pertama dengan background warna teal.</p>
+    </div>
+
+    <div class="vertikal div2">
+        <h2>Div 2</h2>
+        <p>Ini contoh div kedua dengan background warna orange gelap.</p>
+    </div>
+
+    <div class="vertikal div3">
+        <h2>Div 3</h2>
+        <p>Ini contoh div ketiga dengan background warna hijau daun.</p>
+    </div>
+
+    <!-- Div Horizontal -->
+    <div class="horizontal-container">
+        <div class="horizontal">Box A</div>
+        <div class="horizontal">Box B</div>
+        <div class="horizontal">Box C</div>
+    </div>
+</body>
+</html>
